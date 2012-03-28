@@ -1,4 +1,8 @@
 TheDailyCloud::Application.routes.draw do
+  get "cloud/get"
+
+  match '/' => 'cloud#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
