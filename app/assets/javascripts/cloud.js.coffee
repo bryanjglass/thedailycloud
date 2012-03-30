@@ -12,4 +12,6 @@ $(document).ready ->
   $('#content').center()
   $(window).bind 'resize', ->
     $('#content').center()
+  $('.cloud img').bind 'resize', ->
+    $('#content').center()
     
