@@ -10,4 +10,12 @@
  *
  *= require_self
  *= require_tree .
-*/
+ */
+body {
+	background-color: rgba(7, 0, 222, 0.3);
+	background-image: -moz-radial-gradient(50% 50%, circle cover, rgba(7, 0, 222, 0.3), #000000 100%);
+	background-image: -webkit-radial-gradient(50% 50%, circle cover, rgba(7, 0, 222, 0.3), #000000 100%);
+	background-image: -o-radial-gradient(50% 50%, circle cover, rgba(7, 0, 222, 0.3), #000000 100%);
+	background-image: -ms-radial-gradient(50% 50%, circle cover, rgba(7, 0, 222, 0.3), #000000 100%);
+	background-image: radial-gradient(50% 50%, circle cover, rgba(7, 0, 222, 0.3), #000000 100%);
+}

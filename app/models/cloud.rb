@@ -7,7 +7,8 @@ class Cloud < ActiveRecord::Base
     latest = Cloud.order("created_at desc").limit(1).first
 
     if latest.nil? || latest.created_at.to_date < Date.today
-      photos = flickr.photos.search :group_id=>'89594630@N00', :tags=>'clouds, sky', :min_taken_date=>Date.yesterday, :max_taken_date=>Date.tomorrow, :sort=>"interestingness-desc", :per_page=>5
+      #photos = flickr.photos.search :group_id=>'89594630@N00', :tags=>'clouds, sky', :min_taken_date=>Date.yesterday, :max_taken_date=>Date.tomorrow, :sort=>"interestingness-desc", :per_page=>5
+      photos = flickr.photos.search :group_id=>'73183316@N00', :min_taken_date=>Date.yesterday, :max_taken_date=>Date.tomorrow, :sort=>"interestingness-desc", :per_page=>5
 
       cloud = Cloud.new
       cloud.url = "http://farm#{photos.first.farm}.staticflickr.com/#{photos.first.server}/#{photos.first.id}_#{photos.first.secret}_c.jpg".to_str

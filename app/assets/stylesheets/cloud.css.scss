@@ -3,8 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.cloud, .cloud img {
-  margin: auto;
+.cloud {
+  margin:auto;
+}
+
+.cloud img{
+    margin: auto;
   width: 800px;
   display: block;
+    border: 5px solid white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.99);
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.99);
+}
+
+#share {
+  padding: 5px;
+  text-align: center;
 }
