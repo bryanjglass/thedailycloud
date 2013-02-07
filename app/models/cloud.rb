@@ -2,10 +2,6 @@ require 'flickraw'
 require 'fastimage'
 
 class Cloud < ActiveRecord::Base
-  FlickRaw.api_key = '2597acf933973a8f0235ed1d5fe628a0'
-  FlickRaw.shared_secret = 'f99f2874b8777feb'
-  flickr.access_token = '72157629710823089-414132c7c3aafdc6'
-  flickr.access_secret = 'e0b35a64869d3716'
   
   def self.find_current
     Cloud.order("created_at desc").limit(1).first
